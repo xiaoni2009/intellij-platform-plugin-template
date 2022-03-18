@@ -15,4 +15,11 @@
         <listener class="org.jetbrains.plugins.template.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+
+    <actions>
+        <group id="MyPlugin.SampleMenu" text="_Sample Menu" description="Sample menu">
+            <add-to-group group-id="MainMenu" anchor="last"  />
+            <action id="Myplugin.Textboxes" class="com.mytest.plugins.services.TextBoxes" text="Text _Boxes" description="A test menu item" />
+        </group>
+    </actions>
 </idea-plugin>
